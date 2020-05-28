@@ -1,0 +1,23 @@
+GansoOfertas schema
+
+tema: venda de anuncios (anuncie aqui, promoçoes, ofertas e etc)
+
+1-HOME PAGE
+	1.1-anuncios mais recentes ou os mais populares
+2-CATEGORIAS
+	2.1-filtragem de anuncios por categoria (alimentos, lazer, automotivo (...))
+3-CLIENTE
+	3.1-login
+	3.2-esqueci a senha
+	3.3-como ser cliente (direciona para anuncie aqui)
+3-ANUNCIE AQUI
+	3.1-breve introdução, beneficios de anunciar no site, preços, como contatar a empresa
+4-COMO COMPRAR
+	4.1-politica de privacidade
+	4.2-termos de uso
+	4.3-formas de pagamento
+	4.4-proteção ao consumidor
+5-INSTITUCIONAL
+	5.1-quem somos?
+	5.2-trabalhe conosco
+
