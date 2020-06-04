@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<h:head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Login</title>
+
+
+</h:head>
+
+<h:body>
+<h:messages 
+		id="messages"
+		errorStyle="color:red" 
+		warnStyle="color:orange" 
+		infoStyle="color:green"
+		globalOnly="false"/>
+		
+    <div class="login">
+    <h1>Login</h1>
+    <h:form>
+        <h:panelGrid columns="1">
+            <!--  <h:inputText style="font-style:italic" value="#{loginController.user.login}usuario..." onfocus="if (this.value == 'usuario...'){this.value=''}" onblur="if (!this.value != 'usuario....'){this.value = 'usuario...'}"/>
+            <h:inputText style="font-style:italic" value="#{loginController.user.senha}senha..." onfocus="if (this.value == 'senha...'){this.value=''}" onblur="if (!this.value != 'senha...'){this.value = 'senha...'}" /> -->
+            <h:inputText value="#{loginController.user.login} " />
+            <h:inputSecret id="pass" value="#{loginController.user.senha}" />
+            <h:commandButton value="Entrar" action="#{loginContreller.entrar}">
+            <f:ajax execute="@form messages"/>
+            </h:commandButton>
+            <h:commandButton value="cadastro" action="user.xhtml?faces-redirect=true"/>
+            
+        </h:panelGrid>
+    </h:form>
+    </div>
+</h:body>
+
+</html>
